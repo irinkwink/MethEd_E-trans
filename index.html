@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-trans - начни двигаться по новому</title>
     <link rel="stylesheet" href="style/index.css">
+
+    <script defer src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script defer src="js/index.js"></script>
 </head>
 <body>
     <header class="header">
@@ -48,7 +51,7 @@
 
         <section class="product" id="gyroscooter">
             <div class="container product__container">
-                <img src="img/gyroscooter.png" alt="Гироскутер">
+                <img class="product__photo" src="img/gyroscooter.png" alt="Гироскутер">
 
                 <div class="product__content">
                     <h2 class="product__title">Гироскутер</h2>
@@ -62,7 +65,7 @@
 
         <section class="product" id="monowheels">
             <div class="container product__container">
-                <img src="img/monowheels.png" alt="Моноколесо">
+                <img class="product__photo" src="img/monowheels.png" alt="Моноколесо">
 
                 <div class="product__content">
                     <h2 class="product__title">Моноколесо</h2>
@@ -76,7 +79,7 @@
 
         <section class="product" id="elecroscooter">
             <div class="container product__container">
-                <img src="img/elecroscooter.png" alt="Электросамокат">
+                <img class="product__photo" src="img/elecroscooter.png" alt="Электросамокат">
 
                 <div class="product__content">
                     <h2 class="product__title">Электросамокат</h2>
@@ -130,8 +133,8 @@
                                 <a href="" class="social__link">
                                     <svg width="46" height="46" viewbox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="23" cy="23" r="23" fill="currentColor"/>
-                                        <path d="M36.9187 13.1625L32.6937 33.0875C32.375 34.4937 31.5437 34.8437 30.3625 34.1812L23.925 29.4375L20.8187 32.425C20.475 32.7687 20.1875 33.0562 19.525 33.0562L19.9875 26.5L31.9187 15.7188C32.4375 15.2563 31.8062 15 31.1125 15.4625L16.3625 24.75L10.0125 22.7625C8.63121 22.3313 8.60621 21.3813 10.3 20.7188L35.1375 11.15C36.2875 10.7188 37.2937 11.4063 36.9187 13.1625V13.1625Z" fill="white"/>
-                                    </svg>       
+                                        <path d="M36.9187 13.1625L32.6937 33.0875C32.375 34.4937 31.5437 34.8438 30.3625 34.1812L23.925 29.4375L20.8187 32.425C20.475 32.7687 20.1875 33.0562 19.525 33.0562L19.9875 26.5L31.9187 15.7188C32.4375 15.2563 31.8062 15 31.1125 15.4625L16.3625 24.75L10.0125 22.7625C8.63121 22.3313 8.60621 21.3813 10.3 20.7188L35.1375 11.15C36.2875 10.7188 37.2937 11.4063 36.9187 13.1625Z" fill="white"/>
+                                        </svg>
                                 </a>
                             </li>
                         </ul>
@@ -164,18 +167,16 @@
                     </ul>
                 </div>
                 <div class="footer__column">
-                    <h3 class="footer__title">Адрес магазина:</h3>
+                    <h3 class="footer__title">Адрес&nbsp;магазина:</h3>
                     <p class="footer__description">г.&nbsp;Москва, ул.&nbsp;Трубная&nbsp;104/3 1&nbsp;этаж</p>
                 </div>
                 <div class="footer__column contacts">
-                    <div class="footer__contacts">
-                        <h3 class="footer__title">Контакты:</h3>
+                    <h3 class="footer__title">Контакты:</h3>
 
-                        <div class="contacts__list">
-                            <a class="contacts__link" href="tel:+73848833812">+7(384)883-38-12</a>
+                    <div class="contacts__list contacts__list_footer">
+                        <a class="contacts__link" href="tel:+73848833812">+7(384)883-38-12</a>
                         
-                            <a class="contacts__link" href="mailto:ETrans@gmail.com">ETrans@gmail.com</a>
-                        </div>
+                        <a class="contacts__link" href="mailto:ETrans@gmail.com">ETrans@gmail.com</a>
                     </div>
     
                     <ul class="contacts__social social">
