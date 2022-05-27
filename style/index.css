@@ -16,7 +16,7 @@
 
 html {
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     position: relative;
     overflow-x: hidden;
 }
@@ -62,7 +62,7 @@ a {
 
 img, svg {
     display: block;
-    max-height: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -152,7 +152,7 @@ img, svg {
 .hero__btn {
     width: 380px;
     height: 78px;
-    padding: 14px 30px;
+    padding: 15px 30px;
     border: 2px solid transparent;
     background-color: #FFFFFF;
     border-radius: 8px;
@@ -213,7 +213,7 @@ img, svg {
 .product__btn {
     width: 380px;
     height: 78px;
-    padding: 14px 30px;
+    padding: 15px 30px;
     border: 2px solid transparent;
     background-color: #B8FF20;
     border-radius: 8px;
@@ -303,8 +303,7 @@ img, svg {
 .social__link {
     color: #B8FF20;
     /*outline: 2px solid #B8FF20;
-    outline-offset: 2px;*/
-    
+    outline-offset: 2px;*/  
 }
 
 
@@ -388,6 +387,108 @@ img, svg {
     line-height: 130%;
 }
 
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    cursor: pointer;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal__block {
+    position: relative;
+    width: 680px;
+    padding: 40px 15px;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #646464;
+    border-radius: 8px;
+    cursor: default;
+}
+
+.modal__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.modal__title {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-align: center;
+    max-width: 320px;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.modal__text {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.modal__input {
+    border: 1px solid #C0C0C0;
+    border-radius: 6px;
+    width: 100%;
+    height: 78px;
+    padding: 15px;
+}
+
+.modal__input::placeholder {
+    color: #C0C0C0;
+}
+
+.modal__btn {
+    width: 380px;
+    height: 78px;
+    padding: 15px 30px;
+    border: 2px solid transparent;
+    background-color: #B8FF20;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 700;
+    font-size: 26px;
+    color: #18171A;
+    transition-property: background-color, color, border-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s, 0.3s, 0.2s;
+}
+
+.modal__btn:hover {
+    background-color: #CDF478;
+}
+
+.modal__btn:focus {
+    border-color: #18171A;
+}
+
+.modal__btn:active {
+    color: #fff;
+    transition-duration: 0.2s;
+    background-color: #18171A;
+}
+
+.modal__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+
+
 @media (max-width: 1200px) {
     .navigation__list {
         gap: 20px;
@@ -469,6 +570,7 @@ img, svg {
     .hero__btn {
         width: 260px;
         height: 50px;
+        padding: 5px 15px;
         font-size: 18px;
     }
 
@@ -497,6 +599,7 @@ img, svg {
     .product__btn {
         width: 260px;
         height: 50px;
+        padding: 5px 15px;
         font-size: 18px;
     }
 
@@ -545,6 +648,50 @@ img, svg {
         display: block;
         width: 36px;
         height: 36px;
+    }
+
+    .modal__block {
+        width: 520px;
+        padding: 20px 15px;
+    }
+    
+    .modal__container {
+        gap: 15px;
+    }
+    
+    .modal__title {
+        font-size: 18px;
+        max-width: 190px;
+    }
+    
+    .modal__form {
+        gap: 10px;
+        width: 260px;
+    }
+    
+    .modal__text {
+        margin-bottom: 5px;
+        padding-left: 5px;
+    }
+    
+    .modal__input {
+        height: 50px;
+        padding: 10px;
+    }
+    
+    .modal__btn {
+        width: 260px;
+        height: 50px;
+        padding: 5px 15px;
+        font-size: 18px;
+    }
+    
+    .modal__close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        top: 15px;
+        right: 15px;
     }
 }
 
@@ -632,6 +779,10 @@ img, svg {
 
     .footer__logo {
         margin-bottom: 30px;
+    }
+
+    .modal__block {
+        width: 290px;
     }
 }   
 
