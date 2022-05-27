@@ -396,6 +396,7 @@ img, svg {
     cursor: pointer;
     overflow-x: hidden;
     overflow-y: auto;
+    padding: 30px 15px;
 }
 
 .modal__block {
@@ -779,6 +780,10 @@ img, svg {
 
     .footer__logo {
         margin-bottom: 30px;
+    }
+
+    .modal {
+        padding: 15px 5px;
     }
 
     .modal__block {
